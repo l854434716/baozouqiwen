@@ -1,0 +1,56 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"      
+        />        
+	<RelativeLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+         >
+         
+	    <LinearLayout 
+         android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"	    
+	    android:orientation="horizontal" 
+	    android:layout_alignParentTop="true"
+	    android:gravity="center_horizontal"	  
+	    android:background="#ccffffff"
+	    
+        > 
+           <TextView
+			    android:id="@+id/title"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"/>
+        </LinearLayout>  
+        
+        <LinearLayout 
+         android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"	    
+	    android:orientation="horizontal" 
+	    android:layout_alignParentBottom="true"	
+	    android:id="@+id/dotGroup" 
+	    android:gravity="center_horizontal"	      
+            />           
+       
+    </RelativeLayout>
+    
+	<com.ultrapower.baozouqiwen.view.mainpage.MainPageListView
+		        android:id="@+id/dropListView"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:cacheColorHint="@android:color/transparent"
+		        android:fadingEdgeLength="0dp" />
+
+</LinearLayout>
+</ScrollView>
